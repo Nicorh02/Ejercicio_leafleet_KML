@@ -1,0 +1,157 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+#logo_titulo {
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    height: 100px;
+    justify-content: left;
+}
+
+body {
+    background-color: rgb(9, 255, 0);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding-top: 1%;
+}
+
+#buscador {
+    font-weight: bolder;
+    color: white;
+    font-size: x-large;
+}
+
+
+#label {
+    color: white;
+}
+
+#ciudad {
+    font-weight: bolder;
+
+}
+
+article {
+    display: flex;
+    height: 80%;
+}
+
+#contenedor_mapa {
+    width: 50vw;
+}
+
+#ruta {
+    width: 50vw;
+}
+
+#mapa {
+    width: 50vw;
+    height: 60vh;
+    background-color: aquamarine;
+}
+
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 3fr) 2fr;
+    grid-template-rows: fit-content(90%);
+    background-color: #2196F3;
+    align-self: stretch;
+}
+
+.contenedor>div {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#eliminar.boton {
+    color: white;
+    background-color: red;
+}
+
+#div {
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+}
+
+#dibujo {
+    background-color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+#graba {
+    font-weight: bolder;
+    background-color: rgb(252, 84, 187);
+    color: black;
+}
+
+footer {
+    background-color: rgb(255, 249, 81);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    font-style: italic;
+}
+
+#imagen_pie {
+    height: 200px;
+}
+@media (max-width: 600px) {
+    article {
+        flex-direction: column;
+    }
+
+    #contenedor_mapa {
+        width: 90vw;
+    }
+
+    #ruta {
+        width: 100vw;
+    }
+
+    #mapa {
+        width: 100vw;
+    }
+
+    .nombre {
+        display: flex;
+        align-items: center;
+    }
+
+}
